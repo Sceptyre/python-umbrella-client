@@ -1,3 +1,9 @@
+# Install
+`pip install git+https://github.com/Sceptyre/python-umbrella-client.git@main`  
+
+Bleeding Edge:  
+`pip install git+https://github.com/Sceptyre/python-umbrella-client.git@devel`
+
 # Usage
 ```py
 from umbrellaclient import UmbrellaClient
