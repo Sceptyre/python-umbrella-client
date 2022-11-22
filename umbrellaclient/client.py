@@ -1,9 +1,11 @@
-from requests.sessions import session
+from requests.sessions import session, Session
 from requests.auth import HTTPBasicAuth
-from . import api
+from .api import api
 
 class UmbrellaClient():
-    _s = session()
+    _s: Session = session()
+
+    destination_lists: api.DestinationListAPI
 
     def _get_token(self):
         r = self._s.post(
