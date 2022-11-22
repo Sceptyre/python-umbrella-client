@@ -1,6 +1,6 @@
 from requests.sessions import session, Session
 from requests.auth import HTTPBasicAuth
-from .api import api
+from . import api
 
 class UmbrellaClient():
     _s: Session = session()
