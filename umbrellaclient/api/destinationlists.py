@@ -1,6 +1,6 @@
-from .base import BaseAPI
+from .base import _BaseAPI
 
-class DestinationListAPI(BaseAPI):
+class DestinationListAPI(_BaseAPI):
     # Destination List interactions
     def get_destination_list(self, destination_list_id: str):
         r = self._uc._s.get(
