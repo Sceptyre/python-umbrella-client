@@ -1,3 +1,3 @@
-class _BaseAPI(object):
-    def __init__(self, uc):
-        self._uc = uc
+class _BaseAPI():
+    def __init__(self, umbrella_client):
+        self._uc = umbrella_client
