@@ -16,14 +16,14 @@ c = UmbrellaClient(
 
 ```py
 # Get all destination lists
-c.get_destination_lists()
+c.destinationlists.get_destination_lists()
 
 # Get specific destination list
-c.get_destination_list('1234')
+c.destinationlists.get_destination_list('1234')
 
 # Get list's destinations
-c.get_destination_list_destinations('1234')
+c.destinationlists.get_destination_list_destinations('1234')
 
 # Add destination to list
-c.add_destination_list_destination('1234', 'example.com')
+c.destinationlists.add_destination_list_destination('1234', 'example.com')
 ```
