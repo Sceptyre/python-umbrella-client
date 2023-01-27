@@ -5,7 +5,8 @@ from . import api
 class UmbrellaClient():
     s: Session = session()
 
-    destination_lists: api.DestinationListAPI
+    destination_lists   : api.DestinationListAPI
+    deployments         : api.DeploymentsAPI
 
     def _get_token(self):
         res = self.s.post(
@@ -25,4 +26,5 @@ class UmbrellaClient():
         self.s.headers['Authorization'] = f'Bearer {token}'
 
         # Map APIs
-        self.destination_lists = api.DestinationListAPI(self)
+        self.destination_lists  = api.DestinationListAPI(self)
+        self.deployments        = api.DeploymentsAPI(self)
